@@ -1,0 +1,73 @@
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(6, 50%);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #ddd;
+}
+
+main {
+  font-family: 'Lato', sans-serif;
+}
+
+.header,
+.footer {
+  background-color: #222;
+}
+
+.project {
+  position: relative;
+}
+
+.project:hover .project-details {
+  opacity: 1;
+}
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all .3s ease;
+  padding: 20px;
+}
+
+.project-1 {
+  background: url("https://user-images.githubusercontent.com/15898299/83561122-b0490000-a4ed-11ea-8266-575c12566bd3.png") center center/cover no-repeat;
+}
+
+.project-2 {
+  background: url("https://user-images.githubusercontent.com/15898299/83975243-51a6cc00-a8c9-11ea-8007-98a31d37bd34.png") center center/cover no-repeat;
+}
+
+.project-3 {
+  background: url("https://github.com/flpfar/freecodecamp-articles-scraper/raw/develop/images/screenshot.png") center center/cover no-repeat;
+}
+
+.project-4 {
+  background: url("https://github.com/flpfar/be-the-hero/raw/master/screenshots/screenshotweb.png") center center/cover no-repeat;
+}
+
+.footer {
+
+}
