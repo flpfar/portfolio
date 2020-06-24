@@ -1,3 +1,5 @@
+/************************************************ GRID LAYOUT */
+
 main {
   height: 100vh;
   display: grid;
@@ -16,6 +18,8 @@ main {
   }
 }
 
+/************************************************ GENERAL */
+
 h1,
 h2 {
   font-family: 'Ubuntu', sans-serif;
@@ -25,6 +29,7 @@ h2 {
 
 main {
   font-family: 'Lato', sans-serif;
+  color: #fff;
 }
 
 .header,
@@ -32,24 +37,22 @@ main {
   background-color: #222;
 }
 
+/************************************************ PROJECTS */
+
 .project {
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .project:hover .project-details {
   opacity: 1;
 }
 
-.project-details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  transition: all .3s ease;
-  padding: 20px;
+.project-title {
+  background-color: #222;
+  margin: 0 10px 10px;
+  padding: 5px;
 }
 
 .project-1 {
@@ -68,6 +71,65 @@ main {
   background: url("https://github.com/flpfar/be-the-hero/raw/master/screenshots/screenshotweb.png") center center/cover no-repeat;
 }
 
-.footer {
+/************************************************ PROJECTS DETAILS #65e87c*/
 
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.90);
+  transition: all .3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
+.details-title {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e33c41;
+  font-size: 1.4rem;
+}
+
+.details-info {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.details-techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-item {
+  margin: 0 4px 6px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border: 1px solid #e33c41;
+}
+
+.details-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.details-footer-item {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #e33c41;
+}
+
+.primary-link {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary-link:hover {
+  color: #e33c41;
+}
+
