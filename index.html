@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="/assets/styles/reset.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
@@ -14,29 +15,33 @@
   <body>
     <main class="container">
       <header class="header item">
-        <h1> &lt; Felipe Rosa &gt; </h1>
+        <h1 class="header-name angle-brackets"> Felipe Rosa </h1>
+        <p class="header-paragraph">Hi! I'm a full-stack software developer.</p>
+        <p class="header-paragraph">I love solving problems, and maybe I can solve yours.</p>
+        <p class="header-paragraph">Check out some of my projects _</p>
+        <span class="projects-tag-open angle-brackets"> projects </span>
       </header>
       <article class="project project-1 item">
         <h2 class="project-title">Project: Series Reviews</h2>
         <div class="project-details">
           <h2 class="details-title">Series Reviews</h2>
           <p class="details-info">
-            Series-Reviews offers you a new way to share your reviews about TV series, and read other users'. It provides a simple interface where the reviews are grouped into categories, and can be voted by other users. It is created to be used as a desktop app, so there may be design issues on mobile version.
+            A platform to share and read TV series reviews.
           </p>
           <ul class="details-techs">
             <li class="tech-item">Ruby</li>
             <li class="tech-item">Ruby on Rails</li>
             <li class="tech-item">Bootstrap</li>
             <li class="tech-item">RSpec</li>
+            <li class="tech-item">Capybara</li>
             <li class="tech-item">Postgres</li>
-            <li class="tech-item">Rubocop</li>
           </ul>
           <footer class="details-footer">
-            <a href="#" class="details-github details-footer-item primary-link">
+            <a href="https://www.github.com/flpfar/series-reviews" class="details-github details-footer-item primary-link">
               <i class="fa fa-github" aria-hidden="true"></i>
-              <span>Code</span>
+              <span>View Source</span>
             </a>
-            <a href="#" class="details-live details-footer-item primary-link">
+            <a href="http://series-reviews.herokuapp.com/" class="details-live details-footer-item primary-link">
               <i class="fa fa-play-circle" aria-hidden="true"></i>
               <span>Live Demo</span>
             </a>
@@ -46,20 +51,74 @@
       <article class="project project-2 item">
         <h2 class="project-title">Project: Ecoleta</h2>
         <div class="project-details">
+          <h2 class="details-title">Ecoleta</h2>
+          <p class="details-info">
+            A full solution application that connects people to recycling drop off locations.
+          </p>
+          <ul class="details-techs">
+            <li class="tech-item">Typescript</li>
+            <li class="tech-item">NodeJS</li>
+            <li class="tech-item">ReactJS</li>
+            <li class="tech-item">ReactNative</li>
+            <li class="tech-item">Expo</li>
+          </ul>
+          <footer class="details-footer">
+            <a href="https://github.com/flpfar/ecoleta" class="details-github details-footer-item primary-link">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span>View Source</span>
+            </a>
+          </footer>
         </div>
       </article>
       <article class="project project-3 item">
-        <h2 class="project-title">Project: Articles Scraper</h2>
+        <h2 class="project-title">Project: Be The Hero</h2>
         <div class="project-details">
+          <h2 class="details-title">Be The Hero</h2>
+          <p class="details-info">
+            A different way to connect NGOs (Non-Governmental Organizations) that need help with people who want to help.
+          </p>
+          <ul class="details-techs">
+            <li class="tech-item">Javascript</li>
+            <li class="tech-item">NodeJS</li>
+            <li class="tech-item">ReactJS</li>
+            <li class="tech-item">ReactNative</li>
+            <li class="tech-item">Expo</li>
+            <li class="tech-item">Express</li>
+            <li class="tech-item">Axios</li>
+          </ul>
+          <footer class="details-footer">
+            <a href="https://github.com/flpfar/be-the-hero/" class="details-github details-footer-item primary-link">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span>View Source</span>
+            </a>
+          </footer>
         </div>
       </article>
       <article class="project project-4 item">
-        <h2 class="project-title">Project: Be The Hero</h2>
+        <h2 class="project-title">Project: Articles Scraper</h2>
         <div class="project-details">
+          <h2 class="details-title">FreeCodeCamp Articles Scraper</h2>
+          <p class="details-info">
+            A scraper that collects data from first pages of freeCodeCamp.org and shows statistics like authors that published more articles recently and most used tags.
+          </p>
+          <ul class="details-techs">
+            <li class="tech-item">Ruby</li>
+            <li class="tech-item">HTTParty</li>
+            <li class="tech-item">Nokogiri</li>
+            <li class="tech-item">Byebug</li>
+            <li class="tech-item">RSpec</li>
+            <li class="tech-item">Rubocop</li>
+          </ul>
+          <footer class="details-footer">
+            <a href="https://github.com/flpfar/freecodecamp-articles-scraper" class="details-github details-footer-item primary-link">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span>View Source</span>
+            </a>
+          </footer>
         </div>
       </article>
       <footer class="footer item">
-        <h1 class=""> &lt;&frasl; Felipe Rosa &gt; </h1>
+        <span class="projects-tag-close angle-brackets"> /projects </span>
       </footer>
     </main>
   </body>

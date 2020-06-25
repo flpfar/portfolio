@@ -4,6 +4,7 @@ main {
   height: 100vh;
   display: grid;
   grid-template-rows: repeat(6, 50%);
+  letter-spacing: -1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -22,19 +23,15 @@ main {
 
 h1,
 h2 {
-  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Courier Prime', monospace;
   font-weight: 700;
-  color: #ddd;
 }
 
 main {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Courier Prime', monospace;
   color: #fff;
-}
-
-.header,
-.footer {
-  background-color: #222;
 }
 
 /************************************************ PROJECTS */
@@ -42,17 +39,22 @@ main {
 .project {
   position: relative;
   display: flex;
-  align-items: flex-end;
-}
-
-.project:hover .project-details {
-  opacity: 1;
+  align-items: flex-start;
 }
 
 .project-title {
   background-color: #222;
-  margin: 0 10px 10px;
-  padding: 5px;
+  font-weight: 400;
+  margin: 10px 0 10px;
+  box-shadow: 2px 2px 1px 0px #000;
+  padding: 4px 12px 4px 16px;
+}
+
+.project-title::before {
+  content: '>';
+  font-weight: 700;
+  margin-right: 5px;
+  color: #0c9100;
 }
 
 .project-1 {
@@ -64,14 +66,18 @@ main {
 }
 
 .project-3 {
-  background: url("https://github.com/flpfar/freecodecamp-articles-scraper/raw/develop/images/screenshot.png") center center/cover no-repeat;
-}
-
-.project-4 {
   background: url("https://github.com/flpfar/be-the-hero/raw/master/screenshots/screenshotweb.png") center center/cover no-repeat;
 }
 
-/************************************************ PROJECTS DETAILS #65e87c*/
+.project-4 {
+  background: url("https://github.com/flpfar/freecodecamp-articles-scraper/raw/develop/images/screenshot.png") center center/cover no-repeat;
+}
+
+/************************************************ PROJECTS DETAILS #65e87c #e33c41*/
+
+.project:hover .project-details {
+  transform: scale(1);
+}
 
 .project-details {
   position: absolute;
@@ -79,7 +85,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
+  transform: scale(0);
   background-color: rgba(0, 0, 0, 0.90);
   transition: all .3s ease;
   padding: 20px;
@@ -89,7 +95,7 @@ main {
 
 .details-title {
   padding-bottom: 5px;
-  border-bottom: 2px solid #e33c41;
+  border-bottom: 2px solid #0c9100;
   font-size: 1.4rem;
 }
 
@@ -108,7 +114,7 @@ main {
   margin: 0 4px 6px;
   padding: 4px 8px;
   font-size: 0.8rem;
-  border: 1px solid #e33c41;
+  border: 1px solid #0c9100;
 }
 
 .details-footer {
@@ -119,7 +125,7 @@ main {
 
 .details-footer-item {
   padding-bottom: 4px;
-  border-bottom: 2px solid #e33c41;
+  border-bottom: 2px solid #0c9100;
 }
 
 .primary-link {
@@ -130,6 +136,56 @@ main {
 }
 
 .primary-link:hover {
-  color: #e33c41;
+  color: #0c9100;
 }
 
+/************************************************ HEADER AND FOOTER */
+
+.header,
+.footer {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/************************************************ HEADER */
+
+.header-name {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.angle-brackets::before,
+.angle-brackets::after,
+.header-paragraph::before {
+  color: #0c9100;
+}
+
+.angle-brackets::before {
+  content: '<';
+}
+
+.angle-brackets::after {
+  content: '>';
+}
+
+.header-paragraph {
+  margin: 4px 0;
+}
+
+.header-paragraph::before {
+  content: '>';
+  margin-right: 4px;
+}
+
+.projects-tag-open {
+  margin-top: auto;
+}
+
+/************************************************ FOOTER */
+
+.projects-tag-close {
+  align-self: flex-start;
+}
