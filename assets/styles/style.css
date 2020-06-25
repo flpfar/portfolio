@@ -22,7 +22,8 @@ main {
 /************************************************ GENERAL */
 
 h1,
-h2 {
+h2,
+h3 {
   /* font-family: 'Ubuntu', sans-serif; */
   font-family: 'Courier Prime', monospace;
   font-weight: 700;
@@ -186,6 +187,69 @@ main {
 
 /************************************************ FOOTER */
 
+.footer {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .projects-tag-close {
   align-self: flex-start;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact-me {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.contact-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.contact-item {
+  flex: 1 1 120px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-link:hover::before,
+.contact-link:hover::after {
+  color: #0c9100;
+  font-size: 8rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-link:hover::before {
+  content: '[';
+  left: -1rem;
+  
+}
+
+.contact-link:hover::after {
+  content: ']';
+  right: -1rem;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
 }
