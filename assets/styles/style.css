@@ -41,6 +41,7 @@ main {
   position: relative;
   display: flex;
   align-items: flex-start;
+  border: 10px solid #000;
 }
 
 .project-title {
@@ -60,18 +61,22 @@ main {
 
 .project-1 {
   background: url("https://user-images.githubusercontent.com/15898299/83561122-b0490000-a4ed-11ea-8266-575c12566bd3.png") center center/cover no-repeat;
+  background-clip: content-box;
 }
 
 .project-2 {
   background: url("https://user-images.githubusercontent.com/15898299/83975243-51a6cc00-a8c9-11ea-8007-98a31d37bd34.png") center center/cover no-repeat;
+  background-clip: content-box;
 }
 
 .project-3 {
   background: url("https://github.com/flpfar/be-the-hero/raw/master/screenshots/screenshotweb.png") center center/cover no-repeat;
+  background-clip: content-box;
 }
 
 .project-4 {
   background: url("https://github.com/flpfar/freecodecamp-articles-scraper/raw/develop/images/screenshot.png") center center/cover no-repeat;
+  background-clip: content-box;
 }
 
 /************************************************ PROJECTS DETAILS #65e87c #e33c41*/
@@ -87,7 +92,7 @@ main {
   right: 0;
   bottom: 0;
   transform: scale(0);
-  background-color: rgba(0, 0, 0, 0.90);
+  background-color: rgba(0, 0, 0, 0.95);
   transition: all .3s ease;
   padding: 20px;
   display: flex;
@@ -114,7 +119,7 @@ main {
 .tech-item {
   margin: 0 4px 6px;
   padding: 4px 8px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border: 1px solid #0c9100;
 }
 
@@ -154,8 +159,9 @@ main {
 
 .header-name {
   color: #fff;
-  font-size: 1.4rem;
-  margin-bottom: 4px;
+  font-size: 2rem;
+  margin-bottom: 16px;
+
 }
 
 .angle-brackets::before,
